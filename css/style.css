@@ -1,0 +1,68 @@
+
+body {
+    width: 90%;
+    margin: auto;
+} 
+
+#header {
+    background-image: linear-gradient(to bottom, #c90808, #9a001d, #680a20, #370f18, #000000);
+    text-align: center;
+    padding: 10px;
+    -webkit-box-shadow: 0px 6px 16px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 6px 16px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 6px 16px 1px rgba(0,0,0,0.75);
+}
+#catalogo {
+    width: 90%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: auto;
+}
+#carrito {
+    width: 90%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: auto;
+}
+#catalogo-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.titulo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.catalogo-articulo {
+    margin: 5px;
+    border-radius: 5px 5px 0 0 ;
+    overflow: hidden;
+    border-bottom: 4px solid red;
+    margin-bottom: 30px;
+    background-color: rgb(238, 238, 238);
+    cursor: pointer;
+}
+
+.catalogo-articulo:hover{
+    -webkit-box-shadow: 0px 0px 21px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 21px -3px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 21px -3px rgba(0,0,0,0.75);
+}
+
+.articulo-img {
+    width: 200px;
+}
+
+.articulo-titulo {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.articulo-precio {
+    text-align: end;
+    padding: 10px;
+}
