@@ -34,10 +34,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
         articulo = document.createElement("article");
         articulo.className = "catalogo-articulo";
         articulo.onclick = function addCarrito() {
-            console.log("añadido");
-            carrito.push(coche);
+            console.log(carrito.indexOf(coche));
+            if (carrito.indexOf(coche) >= 0) {
+                coche.cantidad++;
+            } else {
+                carrito.push(coche);
+            }
             mostrarCarrito(coche);
-            console.log(carrito);
         }
 
         // Crear imagen del articulo
@@ -73,7 +76,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
         cajaCarrito.innerHTML = "";
         carrito.forEach(coche => {
             // Suma cantidad
-            coche.cantidad++;
+            if (coche.cantidad == 0) {
+                coche.cantidad++;
+            }
+
             // Crear articulo
             articulo = document.createElement("article");
             articulo.className = "carrito-articulo";
