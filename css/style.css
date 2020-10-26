@@ -75,6 +75,14 @@ body {
 .articulo-cantidad {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: block;
+    padding: 4px;
+}
+
+.articulo-suma {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    text-align: right;
+    padding: 4px;
 }
 
 /* ESTILOS CARRITO */
@@ -114,13 +122,16 @@ body {
 }
 
 #carrito-vaciar {
-    background-color: chartreuse;
+    background-color: rgb(255, 0, 0);
+    color: white;
     display: inline-block;
     padding: 8px;
+    margin-top: 8px;
+    margin-bottom: 15px;
     border-radius: 5px;
     cursor: pointer;
-    border: 1px solid black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: right;
 }
 
 #carrito-vaciar:hover, .boton-borrarAll:hover, .boton-borrar:hover {
@@ -131,4 +142,5 @@ body {
 
 #carrito-precioTotal {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 15px;
 }

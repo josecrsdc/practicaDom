@@ -99,10 +99,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         
                 // Crear precio y añadir texto
                 creaPrecio(coche);
-                // let precioFormat = new Intl.NumberFormat("es-ES").format(coche.precio);
-                // precioTexto = document.createTextNode(precioFormat + " € x" + coche.cantidad);
-                // articuloPrecio.appendChild(precioTexto);
-
 
                 // Crear cantidad en el carrito
                 creaCantidad(coche);
